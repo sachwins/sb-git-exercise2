@@ -1,0 +1,26 @@
+1. Create a repository and push to github.
+— Login to GitHub and create a new repository
+— Used ( git remote set-url origin git@github.com:sachwins/sb-git-exercise2.git)
+— Used ( git push -u origin main ) to push on GitHub
+
+2. Create two files in master branch, then create a tag 1.0.0 for first release from master.
+— Used ( git tag -a 1.0.0 -m "Tag for release ver 1.0.0" ) to create tag with msg
+
+3. Now, perform some changes in previous files and create another tag 1.0.1.
+— Used ( git tag -a 1.0.1 -m "Tag for release ver 1.0.1" ) to create another tag with msg
+
+4. Now, create another file file3 and create a tag 1.1.0.
+— Used ( git tag -a 1.1.0 -m "Tag for release ver 1.1.0” ) to create another tag with msg
+
+5. Now in 1.0.1 release, do some changes in existing files and create another tag 1.0.2.
+— Used ( git checkout 1.0.1 ) to enter in existing tag
+— Used ( git tag -a 1.0.2 -m "Tag for release ver 1.0.2" )  to create another tag with msg
+
+6. Also do some changes in release 1.1.0, create a tag for next release 1.1.1.
+— Used ( git checkout 1.1.0 ) to enter in existing tag
+— Used ( git tag -a 1.1.1 -m "Tag for release ver 1.1.1” )  to create another tag with msg
+
+Note: Tags should have clear description and all tags should be pushed to github.
+
+All tags are pushed to GitHub using command ( git push --tag )
+All files are pushed to GitHub using command ( git push origin main )
